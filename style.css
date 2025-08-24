@@ -2,7 +2,7 @@
   --bg1: #1E90FF; /* Dodger Blue */
   --bg2: #00BFFF; /* Deep Sky Blue */
   --bg3: #87CEFA; /* Light Sky Blue */
-  --text: #ffffff;
+  --text: #ffffff; /* White text */
 }
 
 body {
@@ -15,7 +15,7 @@ body {
   align-items: center;
   text-align: center;
 
-  /* Smooth blue gradient */
+  /* Smooth animated blue gradient */
   background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
   background-size: 600% 600%;
   animation: gradientShift 10s ease infinite;
@@ -29,7 +29,8 @@ body {
 
 h1 {
   font-size: 3rem;
-  text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  color: var(--text); /* White text */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* Strong shadow for readability */
 }
 
 button {
